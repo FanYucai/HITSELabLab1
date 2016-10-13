@@ -1,5 +1,9 @@
 import java.util.*;
 import java.util.regex.*;
+import javax.print.*;
+
+// I was asked to make changes;
+// It makes me embarrassed
 
 class feifeicaicai {
 	static String exp = "";
@@ -280,7 +284,6 @@ class feifeicaicai {
 	
 	public static String deleteBrackets(String exp) {
 		String resultStr = "";
-		//System.out.println(exp);
 		Matcher naiveBrMatcher = naiveBrPattern.matcher(exp);
 		naiveBrMatcher.find();
 		resultStr = naiveBrMatcher.group(0);
@@ -429,7 +432,6 @@ class feifeicaicai {
 			}
 			exp = exp.replace(splitByPlus[i], tempStr);
 		}
-//		System.out.println("exp = " + exp);
 		return exp;
 	}
 
@@ -586,3 +588,6 @@ class feifeicaicai {
 		} //End of while loop
 	} //End of main
 }
+
+// I dont know wht I can do
+// It's high noon..
