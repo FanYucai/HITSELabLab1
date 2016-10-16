@@ -3,7 +3,7 @@ import java.util.regex.*;
 import java.security.MessageDigest;
 
 class feifeicaicai {
-	static String exp = "";
+	static String exp = "";//这是一个没有用的注释
 	static String input = "";
 	static String cmd = "";//这又是一个没有用的注释
 	static String errStr = "";
