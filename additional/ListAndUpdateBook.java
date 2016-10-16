@@ -8,6 +8,8 @@ import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 import java.util.*;
 
+
+// additional info from C4
 public class ListAndUpdateBook extends ActionSupport {
 
 	private String authorsname;

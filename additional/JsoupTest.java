@@ -7,6 +7,8 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+//additional infos from c4
+
 public class JsoupTest {
     static String url="http://www.cnblogs.com/zyw-205520/archive/2012/12/20/2826402.html";
     /**
