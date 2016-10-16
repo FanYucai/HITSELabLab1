@@ -65,7 +65,7 @@ public class SearchBook extends ActionSupport {
 		this.title = title;
 	}
 	
-	//it's B2 again!
+	//it's B2 again! again and again and again
 	
 	public String execute() throws Exception {
 		String ret = ERROR;

@@ -36,7 +36,7 @@ public class ListAndUpdateBook extends ActionSupport {
 	public String getName() {
 		return name;
 	}
-	//haha it's B2 too!
+	//haha it's B2 too! qwq q wqwqwqq
 	
 	public void setName(String name) {
 		this.name = name;
