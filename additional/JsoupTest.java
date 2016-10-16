@@ -65,6 +65,7 @@ public class JsoupTest {
         }
 
     }
+    //haha it's B2 qwqwqwqwq
     /**
      * 获取指定博客文章的内容
      */

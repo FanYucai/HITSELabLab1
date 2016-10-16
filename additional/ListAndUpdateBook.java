@@ -9,9 +9,6 @@ import com.opensymphony.xwork2.ActionSupport;
 import java.util.*;
 <<<<<<< HEAD
 =======
-
-
-// additional info from C4
 >>>>>>> C4
 public class ListAndUpdateBook extends ActionSupport {
 
@@ -41,7 +38,12 @@ public class ListAndUpdateBook extends ActionSupport {
 	public String getName() {
 		return name;
 	}
+<<<<<<< HEAD
 
+=======
+	//haha it's B2 too! qwq q wqwqwqq
+
+>>>>>>> B2
 	public void setName(String name) {
 		this.name = name;
 	}
