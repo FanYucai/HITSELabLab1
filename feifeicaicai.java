@@ -5,7 +5,7 @@ import java.security.MessageDigest;
 class feifeicaicai {
 	static String exp = "";
 	static String input = "";
-	static String cmd = "";
+	static String cmd = "";//这又是一个没有用的注释
 	static String errStr = "";
 	
 	static Pattern simPattern = Pattern.compile("^!simplify ([a-zA-Z]+=[0-9]+[\\s]*)+$");
