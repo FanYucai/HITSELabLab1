@@ -7,7 +7,7 @@ import java.sql.ResultSet;
 
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
-
+//from B1
 public class UpdateBook extends ActionSupport {
 
 	private String id;
