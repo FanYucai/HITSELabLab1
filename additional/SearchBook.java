@@ -1,5 +1,5 @@
 package qwq;
-
+//additional info from C4
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -7,7 +7,7 @@ import java.sql.ResultSet;
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 import java.util.*;
-
+//from B1
 public class SearchBook extends ActionSupport {
 
 	private String authorsname;
@@ -64,6 +64,8 @@ public class SearchBook extends ActionSupport {
 	public void setTitle(String title) {
 		this.title = title;
 	}
+	
+	//it's B2 again! again and again and again
 	
 	public String execute() throws Exception {
 		String ret = ERROR;

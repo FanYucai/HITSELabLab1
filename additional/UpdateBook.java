@@ -1,5 +1,7 @@
 package qwq;
 
+// C4 says Hello to master
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -7,7 +9,7 @@ import java.sql.ResultSet;
 
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
-
+//from B1
 public class UpdateBook extends ActionSupport {
 
 	private String id;

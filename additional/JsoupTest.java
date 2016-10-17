@@ -6,7 +6,12 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
+<<<<<<< HEAD
+=======
 
+//additional infos from c4
+
+>>>>>>> C4
 public class JsoupTest {
     static String url="http://www.cnblogs.com/zyw-205520/archive/2012/12/20/2826402.html";
     /**
@@ -60,6 +65,7 @@ public class JsoupTest {
         }
 
     }
+    //haha it's B2 qwqwqwqwq
     /**
      * 获取指定博客文章的内容
      */
