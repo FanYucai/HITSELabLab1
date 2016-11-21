@@ -1,7 +1,3 @@
-/**
- * 
- */
-package lab6;
 
 /**
  * @author lanxuan
@@ -331,18 +327,19 @@ public class feifeicaicai {
 	 * @return resultStr
 	 */
 
-	public static int simplify(String exp, String cmd) {
+	public static String simplify(String exp, String cmd) {
 		String simplifiedExp = exp;
 		String[] strs = simSplit.split(cmd);
 		for (int i = 1; i < strs.length;) {
 			String pre = simplifiedExp;
 			if ((simplifiedExp = simplifiedExp.replaceAll(strs[i++], strs[i++])) == pre) {
 				System.out.println("Existing unavailable syntax.");
-				return -1;
+				return "@";
 			}
 		}
-		System.out.println(addPower(merge(simplifiedExp)));
-		return 0;
+		String ret= addPower(merge(simplifiedExp));
+		System.out.println(ret);
+		return ret ;
 	}
 
 	public static String fraction(String para, String inBrackets) {
@@ -552,8 +549,8 @@ public class feifeicaicai {
 				derivedExp = derivedExp + "+" + tempStr;
 			}
 		}
-		String showExp = addPower(merge(derivedExp));
-		System.out.println(showExp);
+		String showExp = addPower((derivedExp));
+		//System.out.println(showExp);
 		return showExp;
 	}
 	/*
@@ -680,7 +677,7 @@ public class feifeicaicai {
 					System.out.println("Please add spaces in right places.");
 					continue;
 				} else if (simMatcher.matches()) {
-					if (simplify(exp, cmd) == -1) {
+					if (simplify(exp, cmd) == "@") {
 						continue;
 					}
 				} else if (derMatcher.matches()) {
