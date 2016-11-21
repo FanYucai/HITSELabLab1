@@ -1,7 +1,20 @@
+/**
+ * 
+ */
+package lab6;
+
+/**
+ * @author lanxuan
+ *
+ */
+
 
 
 import java.util.*;
 import java.util.regex.*;
+
+
+
 /**
  * code for lab1.
  * @author novice
@@ -11,6 +24,9 @@ public class feifeicaicai {
 	/*
 	 * to protect class.
 	 */
+
+
+
 	protected feifeicaicai()  {
         throw new UnsupportedOperationException(); }  // qwq防止子类调用
 	/*
@@ -510,14 +526,14 @@ public class feifeicaicai {
 	 * @param exp,cmd
 	 * @return 0
 	 */
-	public static int derivative(String exp, String cmd) {
+	public static String derivative(String exp, String cmd) {
 		String tarVar = cmd.substring(5);
 		String derivedExp = "";
 		splitByPlus = plusSplit.split(exp);
 
 		if (exp.indexOf(tarVar) == -1) {
 			System.out.println("Error! No variable!");
-			return -1;
+			return "Error! No variable!";
 		}
 		for (int i = 0; i < splitByPlus.length; i++) {
 			String tempStr = "";
@@ -538,7 +554,7 @@ public class feifeicaicai {
 		}
 		String showExp = addPower(merge(derivedExp));
 		System.out.println(showExp);
-		return 0;
+		return showExp;
 	}
 	/*
 	 * judge  pattern.
@@ -668,7 +684,7 @@ public class feifeicaicai {
 						continue;
 					}
 				} else if (derMatcher.matches()) {
-					if (derivative(exp, cmd) == -1) {
+					if (derivative(exp, cmd) == "Error! No variable!") {
 						continue;
 					}
 				} else {
